@@ -2,9 +2,9 @@
 
 namespace CodebarAg\TwilioVerify\Tests;
 
+use CodebarAg\TwilioVerify\TwilioVerifyServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CodebarAg\TwilioVerify\TwilioVerifyServiceProvider;
 
 class TestCase extends Orchestra
 {
