@@ -1,4 +1,4 @@
-<img src="https://banners.beyondco.de/Laravel%20Twilio%20Verify.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-twilio-verify&pattern=signal&style=style_1&description=An+opinionated+way+to+integrate+Twilio+Verify+with+Laravel&md=1&showWatermark=0&fontSize=175px&images=badge-check">
+<img src="https://banners.beyondco.de/Laravel%20Twilio%20Verify.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-twilio-verify&pattern=circuitBoard&style=style_1&description=An+opinionated+way+to+integrate+Twilio+Verify+with+Laravel&md=1&showWatermark=0&fontSize=150px&images=badge-check">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
 [![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
