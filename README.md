@@ -1,15 +1,10 @@
-# ⚠️ WIP ⚠️ Twilio Verify integration with Laravel
+<img src="https://banners.beyondco.de/Laravel%20Twilio%20Verify.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-twilio-verify&pattern=signal&style=style_1&description=An+opinionated+way+to+integrate+Twilio+Verify+with+Laravel&md=1&showWatermark=0&fontSize=175px&images=badge-check">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/codebar-ag/laravel-twilio-verify/run-tests?label=tests)](https://github.com/codebar-ag/laravel-twilio-verify/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/codebar-ag/laravel-twilio-verify/Check%20&%20fix%20styling?label=code%20style)](https://github.com/codebar-ag/laravel-twilio-verify/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
-
-[](delete) 1) manually replace `Ruslan Steiger, SuddenlyRust, auhor@domain.com, Codebar AG, codebar-ag, Vendor Name, laravel-twilio-verify, laravel_twilio_verify, laravel_twilio_verify, TwilioVerify, Twilio Verify integration with Laravel` with their correct values
-[](delete) in `CHANGELOG.md, LICENSE.md, README.md, ExampleTest.php, ModelFactory.php, TwilioVerify.php, TwilioVerifyCommand.php, TwilioVerifyFacade.php, TwilioVerifyServiceProvider.php, TestCase.php, composer.json, create_laravel_twilio_verify_table.php.stub`
-[](delete) and delete `configure-laravel_twilio_verify.sh`
-
-[](delete) 2) You can also run `./configure-laravel_twilio_verify.sh` to do this automatically.
+[![run-tests](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml)
+[![Psalm](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml)
+[![Check & fix styling](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
