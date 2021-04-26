@@ -11,6 +11,6 @@ class TwilioVerifyServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-twilio-verify')
-            ->hasConfigFile();
+            ->hasConfigFile('twilio_verify');
     }
 }
