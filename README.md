@@ -6,8 +6,8 @@
 [![Psalm](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml)
 [![Check & fix styling](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml)
 
-This package was developed to give you a quick start to communicate start and
-check a verification with Twilio Verify.
+This package was developed to give you a quick start to communicate with the
+Twilio Verify service.
 
 ⚠️ This package is not designed as a replacement of the official 
 [Twilio REST API](https://www.twilio.com/docs/verify/api). 
@@ -124,6 +124,7 @@ CodebarAg\TwilioVerify\DTO\VerificationCheck {
 ## 🔧 Configuration file
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --provider="CodebarAg\TwilioVerify\TwilioVerifyServiceProvider" --tag="laravel-twilio-verify-config"
 ```
@@ -131,7 +132,6 @@ php artisan vendor:publish --provider="CodebarAg\TwilioVerify\TwilioVerifyServic
 This is the contents of the published config file:
 
 ```php
-
 return [
 
     /*
