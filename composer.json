@@ -27,13 +27,13 @@
         "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
-        "brianium/paratest": "^6.11",
         "friendsofphp/php-cs-fixer": "^3.46",
         "nunomaduro/collision": "^7.10",
         "orchestra/testbench": "^8.20",
-        "phpunit/phpunit": "^9.6",
+        "pestphp/pest": "^2.31",
+        "phpunit/phpunit": "^10.5",
         "spatie/laravel-ray": "^1.33",
-        "vimeo/psalm": "^4.30"
+        "vimeo/psalm": "^5.19"
     },
     "autoload": {
         "psr-4": {
@@ -54,7 +54,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "composer/package-versions-deprecated": true
+            "composer/package-versions-deprecated": true,
+            "pestphp/pest-plugin": true
         }
     },
     "extra": {
