@@ -35,7 +35,7 @@ class SendCodeAttempt
         return new static(
             time: $time ?? now(),
             channel: $channel ?? 'sms',
-            attempt_sid: $attempt_sid ?? 'VL'.Str::random(32),
+            attempt_sid: $attempt_sid ?? 'VL' . Str::random(32),
         );
     }
 }
