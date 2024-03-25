@@ -2,16 +2,18 @@
 
 namespace CodebarAg\TwilioVerify\DTO;
 
+use Illuminate\Support\Arr;
+
 class Carrier
 {
     public static function fromJson(array $data): self
     {
         return new static(
-            error_code: $data['error_code'],
-            name: $data['name'],
-            mobile_country_code: $data['mobile_country_code'],
-            mobile_network_code: $data['mobile_network_code'],
-            type: $data['type'],
+            error_code: Arr::get($data, 'error_code'),
+            name: Arr::get($data, 'name'),
+            mobile_country_code: Arr::get($data, 'mobile_country_code'),
+            mobile_network_code: Arr::get($data, 'mobile_network_code'),
+            type: Arr::get($data, 'type'),
         );
     }
 

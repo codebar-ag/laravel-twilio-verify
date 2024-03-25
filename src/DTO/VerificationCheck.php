@@ -3,6 +3,7 @@
 namespace CodebarAg\TwilioVerify\DTO;
 
 use Carbon\Carbon;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
 class VerificationCheck
@@ -10,15 +11,15 @@ class VerificationCheck
     public static function fromJson(array $data): self
     {
         return new static(
-            sid: $data['sid'],
-            service_sid: $data['service_sid'],
-            account_sid: $data['account_sid'],
-            to: $data['to'],
-            channel: $data['channel'],
-            status: $data['status'],
-            valid: $data['valid'],
-            created_at: Carbon::parse($data['date_created']),
-            updated_at: Carbon::parse($data['date_updated']),
+            sid: Arr::get($data, 'sid'),
+            service_sid: Arr::get($data, 'service_sid'),
+            account_sid: Arr::get($data, 'account_sid'),
+            to: Arr::get($data, 'to'),
+            channel: Arr::get($data, 'channel'),
+            status: Arr::get($data, 'status'),
+            valid: Arr::get($data, 'valid'),
+            created_at: Carbon::parse(Arr::get($data, 'date_created')),
+            updated_at: Carbon::parse(Arr::get($data, 'date_updated')),
         );
     }
 
@@ -47,9 +48,9 @@ class VerificationCheck
         ?string $updated_at = null,
     ): self {
         return new static(
-            sid: $sid ?? 'VE' . Str::random(32),
-            service_sid: $service_sid ?? 'VA' . Str::random(32),
-            account_sid: $account_sid ?? 'AC' . Str::random(32),
+            sid: $sid ?? 'VE'.Str::random(32),
+            service_sid: $service_sid ?? 'VA'.Str::random(32),
+            account_sid: $account_sid ?? 'AC'.Str::random(32),
             to: $to ?? '+41795555825',
             channel: $channel ?? 'sms',
             status: $status ?? 'approved',

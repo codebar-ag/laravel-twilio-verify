@@ -3,6 +3,7 @@
 namespace CodebarAg\TwilioVerify\DTO;
 
 use Carbon\Carbon;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
@@ -12,9 +13,9 @@ class SendCodeAttempt
     {
         return collect($attempts)->map(function (array $attempt) {
             return new static(
-                time: Carbon::parse($attempt['time']),
-                channel: $attempt['channel'],
-                attempt_sid: $attempt['attempt_sid'],
+                time: Carbon::parse(Arr::get($attempt, 'time')),
+                channel: Arr::get($attempt, 'channel'),
+                attempt_sid: Arr::get($attempt, 'attempt_sid'),
             );
         });
     }
@@ -34,7 +35,7 @@ class SendCodeAttempt
         return new static(
             time: $time ?? now(),
             channel: $channel ?? 'sms',
-            attempt_sid: $attempt_sid ?? 'VL' . Str::random(32),
+            attempt_sid: $attempt_sid ?? 'VL'.Str::random(32),
         );
     }
 }

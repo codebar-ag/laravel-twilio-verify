@@ -2,12 +2,18 @@
 
 namespace CodebarAg\TwilioVerify\DTO;
 
+use Illuminate\Support\Arr;
+
 class Lookup
 {
-    public static function fromJson(array $lookup): self
+    public static function fromJson(array $lookup): ?self
     {
+        if (Arr::get($lookup, 'carrier') === null) {
+            return null;
+        }
+
         return new static(
-            carrier: Carrier::fromJson($lookup['carrier']),
+            carrier: Carrier::fromJson(Arr::get($lookup, 'carrier')),
         );
     }
 
