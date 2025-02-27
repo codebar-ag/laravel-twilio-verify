@@ -4,6 +4,9 @@ namespace CodebarAg\TwilioVerify\DTO;
 
 use Illuminate\Support\Arr;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class Carrier
 {
     public static function fromJson(array $data): self

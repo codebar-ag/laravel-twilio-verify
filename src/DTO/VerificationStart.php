@@ -8,6 +8,8 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 /**
+ * @phpstan-consistent-constructor
+ *
  * @property Collection|SendCodeAttempt[] $send_code_attempts
  */
 class VerificationStart

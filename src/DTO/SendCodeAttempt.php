@@ -7,6 +7,9 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class SendCodeAttempt
 {
     public static function fromJson(array $attempts): Collection

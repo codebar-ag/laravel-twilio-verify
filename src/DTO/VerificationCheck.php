@@ -6,6 +6,9 @@ use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class VerificationCheck
 {
     public static function fromJson(array $data): self

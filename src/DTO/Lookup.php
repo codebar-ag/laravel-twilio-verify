@@ -4,6 +4,9 @@ namespace CodebarAg\TwilioVerify\DTO;
 
 use Illuminate\Support\Arr;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class Lookup
 {
     public static function fromJson(array $lookup): ?self
