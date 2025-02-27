@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/rhyslees/Code/Packages/codebar-ag/laravel-twilio-verify/phpunit.xml" tests="6" assertions="5" errors="0" failures="0" skipped="2" time="0.072368">
+    <testsuite name="CodebarAg Test Suite" tests="6" assertions="5" errors="0" failures="0" skipped="2" time="0.072368">
+      <testsuite name="CodebarAg\TwilioVerify\Tests\Feature\TwilioVerifyTest" file="Twilio Verify (CodebarAg\TwilioVerify\Tests\Feature\TwilioVerify)" tests="2" assertions="0" errors="0" failures="0" skipped="2" time="0.059304">
+        <testcase name="It does start a verification with sms" file="Twilio Verify (CodebarAg\TwilioVerify\Tests\Feature\TwilioVerify)::It does start a verification with sms" class="CodebarAg\TwilioVerify\Tests\Feature\TwilioVerifyTest" classname="CodebarAg.TwilioVerify.Tests.Feature.TwilioVerifyTest" assertions="0" time="0.057009">
+          <skipped/>
+        </testcase>
+        <testcase name="It does check a verification with sms" file="Twilio Verify (CodebarAg\TwilioVerify\Tests\Feature\TwilioVerify)::It does check a verification with sms" class="CodebarAg\TwilioVerify\Tests\Feature\TwilioVerifyTest" classname="CodebarAg.TwilioVerify.Tests.Feature.TwilioVerifyTest" assertions="0" time="0.002295">
+          <skipped/>
+        </testcase>
+      </testsuite>
+      <testsuite name="CodebarAg\TwilioVerify\Tests\Feature\DTOTest" file="DTO (CodebarAg\TwilioVerify\Tests\Feature\DTO)" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.013063">
+        <testcase name="It does create a fake send code attempt" file="DTO (CodebarAg\TwilioVerify\Tests\Feature\DTO)::It does create a fake send code attempt" class="CodebarAg\TwilioVerify\Tests\Feature\DTOTest" classname="CodebarAg.TwilioVerify.Tests.Feature.DTOTest" assertions="1" time="0.006595"/>
+        <testcase name="It does create a fake verification check" file="DTO (CodebarAg\TwilioVerify\Tests\Feature\DTO)::It does create a fake verification check" class="CodebarAg\TwilioVerify\Tests\Feature\DTOTest" classname="CodebarAg.TwilioVerify.Tests.Feature.DTOTest" assertions="1" time="0.002127"/>
+        <testcase name="It does create a fake lookup" file="DTO (CodebarAg\TwilioVerify\Tests\Feature\DTO)::It does create a fake lookup" class="CodebarAg\TwilioVerify\Tests\Feature\DTOTest" classname="CodebarAg.TwilioVerify.Tests.Feature.DTOTest" assertions="2" time="0.002104"/>
+        <testcase name="It does create a fake verification start" file="DTO (CodebarAg\TwilioVerify\Tests\Feature\DTO)::It does create a fake verification start" class="CodebarAg\TwilioVerify\Tests\Feature\DTOTest" classname="CodebarAg.TwilioVerify.Tests.Feature.DTOTest" assertions="1" time="0.002237"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
