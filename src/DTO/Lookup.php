@@ -17,9 +17,7 @@ class Lookup
         );
     }
 
-    public function __construct(public Carrier $carrier)
-    {
-    }
+    public function __construct(public Carrier $carrier) {}
 
     public static function fake(?Carrier $carrier = null): self
     {

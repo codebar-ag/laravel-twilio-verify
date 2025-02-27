@@ -33,8 +33,7 @@ class VerificationCheck
         public bool $valid,
         public Carbon $created_at,
         public Carbon $updated_at,
-    ) {
-    }
+    ) {}
 
     public static function fake(
         ?string $sid = null,
@@ -48,9 +47,9 @@ class VerificationCheck
         ?string $updated_at = null,
     ): self {
         return new static(
-            sid: $sid ?? 'VE' . Str::random(32),
-            service_sid: $service_sid ?? 'VA' . Str::random(32),
-            account_sid: $account_sid ?? 'AC' . Str::random(32),
+            sid: $sid ?? 'VE'.Str::random(32),
+            service_sid: $service_sid ?? 'VA'.Str::random(32),
+            account_sid: $account_sid ?? 'AC'.Str::random(32),
             to: $to ?? '+41795555825',
             channel: $channel ?? 'sms',
             status: $status ?? 'approved',

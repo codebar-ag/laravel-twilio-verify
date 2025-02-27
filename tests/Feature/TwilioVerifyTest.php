@@ -18,7 +18,7 @@ class TwilioVerifyTest extends TestCase
         Event::fake();
         $phoneNumber = '+12085059915';
 
-        $verification = (new TwilioVerify())->start(to: $phoneNumber);
+        $verification = (new TwilioVerify)->start(to: $phoneNumber);
 
         $this->assertInstanceOf(VerificationStart::class, $verification);
         $this->assertSame($phoneNumber, $verification->to);
@@ -37,7 +37,7 @@ class TwilioVerifyTest extends TestCase
         $code = '4804';
         $phoneNumber = '+12085059915';
 
-        $verification = (new TwilioVerify())->check(
+        $verification = (new TwilioVerify)->check(
             to: $phoneNumber,
             code: $code,
         );

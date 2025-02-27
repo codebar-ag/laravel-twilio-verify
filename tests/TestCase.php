@@ -8,12 +8,12 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Spatie\\TwilioVerify\\Database\\Factories\\' . class_basename($modelName) . 'Factory',
+            fn (string $modelName) => 'Spatie\\TwilioVerify\\Database\\Factories\\'.class_basename($modelName).'Factory',
         );
     }
 
