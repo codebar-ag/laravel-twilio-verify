@@ -7,6 +7,9 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class SendCodeAttempt
 {
     public static function fromJson(array $attempts): Collection
@@ -24,8 +27,7 @@ class SendCodeAttempt
         public Carbon $time,
         public string $channel,
         public string $attempt_sid,
-    ) {
-    }
+    ) {}
 
     public static function fake(
         ?Carbon $time = null,
@@ -35,7 +37,7 @@ class SendCodeAttempt
         return new static(
             time: $time ?? now(),
             channel: $channel ?? 'sms',
-            attempt_sid: $attempt_sid ?? 'VL' . Str::random(32),
+            attempt_sid: $attempt_sid ?? 'VL'.Str::random(32),
         );
     }
 }

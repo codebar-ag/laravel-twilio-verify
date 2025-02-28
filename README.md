@@ -1,10 +1,9 @@
 <img src="https://banners.beyondco.de/Laravel%20Twilio%20Verify.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-twilio-verify&pattern=circuitBoard&style=style_2&description=An+opinionated+way+to+integrate+Twilio+Verify+with+Laravel&md=1&showWatermark=0&fontSize=150px&images=badge-check&widths=500&heights=500">
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
-[![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
-[![run-tests](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml)
-[![Psalm](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/psalm.yml)
-[![Check & fix styling](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/php-cs-fixer.yml)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twillio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twillio-verify)
+[![GitHub-Tests](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/run-tests.yml)
+[![GitHub Code Style](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/fix-php-code-style-issues.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/fix-php-code-style-issues.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twillio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twillio-verify)
 
 This package was developed to give you a quick start to communicate with the
 Twilio Verify service.
@@ -18,6 +17,12 @@ An elegant third-party integration to validate users with SMS, Voice, Email and
 Push. Add verification to any step of your user‘s journey with a single API.
 
 ## 🛠 Requirements
+
+| Package |     PHP     | Laravel | 
+|:-------:|:-----------:|:-------:|
+| v12.0.0 | ^8.2 - ^8.4 |  12.x   |
+| v11.0.0 | ^8.2 - ^8.3 |  11.x   | 
+|         |    ^8.0     |   ...   |
 
 - PHP: `^8.0`
 - Laravel: `^8.12`

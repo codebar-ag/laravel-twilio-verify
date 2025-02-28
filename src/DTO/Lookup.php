@@ -4,6 +4,9 @@ namespace CodebarAg\TwilioVerify\DTO;
 
 use Illuminate\Support\Arr;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class Lookup
 {
     public static function fromJson(array $lookup): ?self
@@ -17,9 +20,7 @@ class Lookup
         );
     }
 
-    public function __construct(public Carrier $carrier)
-    {
-    }
+    public function __construct(public Carrier $carrier) {}
 
     public static function fake(?Carrier $carrier = null): self
     {

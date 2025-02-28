@@ -4,6 +4,9 @@ namespace CodebarAg\TwilioVerify\DTO;
 
 use Illuminate\Support\Arr;
 
+/**
+ * @phpstan-consistent-constructor
+ */
 class Carrier
 {
     public static function fromJson(array $data): self
@@ -23,8 +26,7 @@ class Carrier
         public string $mobile_country_code,
         public string $mobile_network_code,
         public string $type,
-    ) {
-    }
+    ) {}
 
     public static function fake(
         ?string $error_code = null,

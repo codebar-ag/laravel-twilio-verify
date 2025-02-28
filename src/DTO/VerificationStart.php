@@ -8,6 +8,8 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 /**
+ * @phpstan-consistent-constructor
+ *
  * @property Collection|SendCodeAttempt[] $send_code_attempts
  */
 class VerificationStart
@@ -43,8 +45,7 @@ class VerificationStart
         public ?Lookup $lookup,
         public Collection $send_code_attempts,
         public string $url,
-    ) {
-    }
+    ) {}
 
     public static function fake(
         ?string $sid = null,
@@ -60,12 +61,12 @@ class VerificationStart
         ?Collection $send_code_attempts = null,
         ?string $url = null,
     ): self {
-        $service = 'VA' . Str::random(32);
+        $service = 'VA'.Str::random(32);
 
         return new static(
-            sid: $sid ?? 'VE' . Str::random(32),
+            sid: $sid ?? 'VE'.Str::random(32),
             service_sid: $service_sid ?? $service,
-            account_sid: $account_sid ?? 'AC' . Str::random(32),
+            account_sid: $account_sid ?? 'AC'.Str::random(32),
             to: $to ?? '+41795555825',
             channel: $channel ?? 'sms',
             status: $status ?? 'pending',
