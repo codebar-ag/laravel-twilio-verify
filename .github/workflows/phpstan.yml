@@ -7,7 +7,7 @@ on:
       - 'phpstan.neon.dist'
 
 jobs:
-  phpsta:
+  phpstan:
     name: phpstan
     runs-on: ubuntu-latest
     steps:
