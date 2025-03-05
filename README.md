@@ -1,9 +1,11 @@
 <img src="https://banners.beyondco.de/Laravel%20Twilio%20Verify.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-twilio-verify&pattern=circuitBoard&style=style_2&description=An+opinionated+way+to+integrate+Twilio+Verify+with+Laravel&md=1&showWatermark=0&fontSize=150px&images=badge-check&widths=500&heights=500">
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twillio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twillio-verify)
-[![GitHub-Tests](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/run-tests.yml)
-[![GitHub Code Style](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/fix-php-code-style-issues.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twillio-verify/actions/workflows/fix-php-code-style-issues.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twillio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twillio-verify)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
+[![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-twilio-verify.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-twilio-verify)
+[![GitHub-Tests](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/run-tests.yml)
+[![GitHub Code Style](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/fix-php-code-style-issues.yml/badge.svg?branch=main)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/fix-php-code-style-issues.yml)
+[![PHPStan](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/phpstan.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/phpstan.yml)
+[![Dependency Review](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/codebar-ag/laravel-twilio-verify/actions/workflows/dependency-review.yml)
 
 This package was developed to give you a quick start to communicate with the
 Twilio Verify service.
